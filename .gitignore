@@ -1,0 +1,5 @@
+# Ignorar credenciales por seguridad
+credencialesATCGrid.yaml
+
+# Ignorar cuadernos de practicas sin finalizar
+*.odt
