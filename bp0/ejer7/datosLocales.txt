@@ -1,0 +1,28 @@
+---LOCAL---
+N: 65536 Tamaño vector: 524288 Tiempo: 0.000081414
+N: 131072 Tamaño vector: 1048576 Tiempo: 0.000211189
+N: 262144 Tamaño vector: 2097152 Tiempo: 0.000424802
+---GLOBAL---
+N: 65536 Tamaño vector: 524288 Tiempo: 0.000180841
+N: 131072 Tamaño vector: 1048576 Tiempo: 0.000499983
+N: 262144 Tamaño vector: 2097152 Tiempo: 0.000993766
+N: 524288 Tamaño vector: 4194304 Tiempo: 0.002234037
+N: 1048576 Tamaño vector: 8388608 Tiempo: 0.004666239
+N: 2097152 Tamaño vector: 16777216 Tiempo: 0.008968911
+N: 4194304 Tamaño vector: 33554432 Tiempo: 0.017548918
+N: 8388608 Tamaño vector: 67108864 Tiempo: 0.032473460
+N: 16777216 Tamaño vector: 134217728 Tiempo: 0.060135758
+N: 33554432 Tamaño vector: 268435456 Tiempo: 0.113444304
+N: 33554432 Tamaño vector: 268435456 Tiempo: 0.124786843
+---DYNAMIC---
+N: 65536 Tamaño vector: 524288 Tiempo: 0.000286451
+N: 131072 Tamaño vector: 1048576 Tiempo: 0.000436063
+N: 262144 Tamaño vector: 2097152 Tiempo: 0.000983607
+N: 524288 Tamaño vector: 4194304 Tiempo: 0.001721009
+N: 1048576 Tamaño vector: 8388608 Tiempo: 0.003723699
+N: 2097152 Tamaño vector: 16777216 Tiempo: 0.006570914
+N: 4194304 Tamaño vector: 33554432 Tiempo: 0.014336563
+N: 8388608 Tamaño vector: 67108864 Tiempo: 0.024836793
+N: 16777216 Tamaño vector: 134217728 Tiempo: 0.060334488
+N: 33554432 Tamaño vector: 268435456 Tiempo: 0.100444459
+N: 67108864 Tamaño vector: 536870912 Tiempo: 0.200325196

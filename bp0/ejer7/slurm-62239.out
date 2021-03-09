@@ -1,0 +1,36 @@
+---LOCAL---
+N: 65536 Tamaño vector: 524288 Tiempo: 0.000178204
+N: 131072 Tamaño vector: 1048576 Tiempo: 0.000367023
+N: 262144 Tamaño vector: 2097152 Tiempo: 0.000729080
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+srun: error: atcgrid1: task 0: Segmentation fault (core dumped)
+---GLOBAL---
+N: 65536 Tamaño vector: 524288 Tiempo: 0.000544249
+N: 131072 Tamaño vector: 1048576 Tiempo: 0.000680420
+N: 262144 Tamaño vector: 2097152 Tiempo: 0.001438869
+N: 524288 Tamaño vector: 4194304 Tiempo: 0.002632678
+N: 1048576 Tamaño vector: 8388608 Tiempo: 0.005266595
+N: 2097152 Tamaño vector: 16777216 Tiempo: 0.009236259
+N: 4194304 Tamaño vector: 33554432 Tiempo: 0.017935467
+N: 8388608 Tamaño vector: 67108864 Tiempo: 0.033478220
+N: 16777216 Tamaño vector: 134217728 Tiempo: 0.066317673
+N: 33554432 Tamaño vector: 268435456 Tiempo: 0.132645390
+N: 33554432 Tamaño vector: 268435456 Tiempo: 0.133217572
+---DYNAMIC---
+N: 65536 Tamaño vector: 524288 Tiempo: 0.000422847
+N: 131072 Tamaño vector: 1048576 Tiempo: 0.000952335
+N: 262144 Tamaño vector: 2097152 Tiempo: 0.001900344
+N: 524288 Tamaño vector: 4194304 Tiempo: 0.002828415
+N: 1048576 Tamaño vector: 8388608 Tiempo: 0.004889878
+N: 2097152 Tamaño vector: 16777216 Tiempo: 0.008556055
+N: 4194304 Tamaño vector: 33554432 Tiempo: 0.016817041
+N: 8388608 Tamaño vector: 67108864 Tiempo: 0.032767856
+N: 16777216 Tamaño vector: 134217728 Tiempo: 0.064050424
+N: 33554432 Tamaño vector: 268435456 Tiempo: 0.127837521
+N: 67108864 Tamaño vector: 536870912 Tiempo: 0.245578340

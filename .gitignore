@@ -1,2 +1,3 @@
-# Ignorar credenciales por seguridad
-credencialesATCGrid.yaml
+# Ignorar credenciales
+*.yaml
+.~*
