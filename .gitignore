@@ -1,3 +1,8 @@
-# Ignorar credenciales
+# Ignore credentials
 *.yaml
+
+# Ignore LibreOffice's temporal files
 .~*
+
+# Ignore dumb questions 
+preguntas.txt
