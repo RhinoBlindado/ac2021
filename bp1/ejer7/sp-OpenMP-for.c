@@ -28,11 +28,9 @@ int main(int argc, char** argv){
   }
 
   //Inicializar vectores 
-  #pragma omp parallel
-  {
     if (N < 9)
     {
-      #pragma omp for
+      #pragma omp parallel for
       for (i = 0; i < N; i++)
       {
         v1[i] = N * 0.1 + i * 0.1;
@@ -42,12 +40,10 @@ int main(int argc, char** argv){
     }
     else
     {
-      #pragma omp single
-      {
-        srand(time(0));
-      }
+      srand(time(0));
 
-      #pragma omp for
+
+      #pragma omp parallel for
       for (i = 0; i < N; i++)
       {
         v1[i] = rand()/ ((double) rand()); 
@@ -58,12 +54,12 @@ int main(int argc, char** argv){
     start = omp_get_wtime();
 
     //Calcular suma de vectores
-    #pragma omp for
+    #pragma omp parallel for
     for(i=0; i<N; i++) 
       v3[i] = v1[i] + v2[i]; 
 
     finish = omp_get_wtime();
-  } // FIN PARALELISMO
+    // FIN PARALELISMO
 
   double ncgt = finish - start;
 

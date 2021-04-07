@@ -32,12 +32,11 @@ int main(int argc, char** argv){
   {
     if (N < 9)
     {
-      #pragma omp sections
+      #pragma omp sections private (i)
       {
         #pragma omp section
         {
-          int n_max = N/4;
-          for (i = 0; i < n_max; i++)
+          for (i = 0; i <  N/4; i++)
           {
             v1[i] = N * 0.1 + i * 0.1;
             v2[i] = N * 0.1 - i * 0.1;
@@ -46,9 +45,7 @@ int main(int argc, char** argv){
 
         #pragma omp section
         {
-          int n_max = N/4*2;
-          int n_min = N/4;
-          for (i = n_min; i < n_max; i++)
+          for (i = N/4; i < (N/4)*2; i++)
           {
             v1[i] = N * 0.1 + i * 0.1;
             v2[i] = N * 0.1 - i * 0.1;
@@ -57,9 +54,7 @@ int main(int argc, char** argv){
 
         #pragma omp section
         {
-          int n_max = N/4*3;
-          int n_min = N/4*2;
-          for (i = n_min; i < n_max; i++)
+          for (i = (N/4)*2; i < (N/4)*3; i++)
           {          
             v1[i] = N * 0.1 + i * 0.1;
             v2[i] = N * 0.1 - i * 0.1;
@@ -68,9 +63,7 @@ int main(int argc, char** argv){
 
         #pragma omp section
         {
-          int n_max = N;
-          int n_min = N/4*3;
-          for (i = n_min; i < n_max; i++)
+          for (i = (N/4)*3; i < N; i++)
           {
             v1[i] = N * 0.1 + i * 0.1;
             v2[i] = N * 0.1 - i * 0.1;
@@ -86,12 +79,11 @@ int main(int argc, char** argv){
         srand(time(0));
       }
 
-      #pragma omp sections
+      #pragma omp sections private (i)
       {
         #pragma omp section
         {
-          int n_max = N/4;
-          for (i = 0; i < n_max; i++)
+          for (i = 0; i < N/4; i++)
           {
             v1[i] = rand()/ ((double) rand()); 
             v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
@@ -100,9 +92,7 @@ int main(int argc, char** argv){
 
         #pragma omp section
         {
-          int n_max = N/4*2;
-          int n_min = N/4;
-          for (i = n_min; i < n_max; i++)
+          for (i = N/4; i < (N/4)*2; i++)
           {
             v1[i] = rand()/ ((double) rand()); 
             v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
@@ -111,9 +101,7 @@ int main(int argc, char** argv){
 
         #pragma omp section
         {
-          int n_max = N/4*3;
-          int n_min = N/4*2;
-          for (i = n_min; i < n_max; i++)
+          for (i = (N/4)*2; i < (N/4)*3; i++)
           {
             v1[i] = rand()/ ((double) rand()); 
             v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
@@ -122,9 +110,7 @@ int main(int argc, char** argv){
 
         #pragma omp section
         {
-          int n_max = N;
-          int n_min = N/4*3;
-          for (i = n_min; i < n_max; i++)
+          for (i = (N/4)*3; i < N; i++)
           {
             v1[i] = rand()/ ((double) rand()); 
             v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
@@ -136,37 +122,30 @@ int main(int argc, char** argv){
     start = omp_get_wtime();
 
     //Calcular suma de vectores
-    #pragma omp sections
+    #pragma omp sections private (i)
     {
 
       #pragma omp section
       {
-        int n_max = N/4;
-        for (i = 0; i < n_max; i++)
+        for (i = 0; i < N/4; i++)
           v3[i] = v1[i] + v2[i]; 
       }
 
       #pragma omp section
       {
-        int n_max = N/4*2;
-        int n_min = N/4;
-        for (i = n_min; i < n_max; i++)
+        for (i = N/4; i < (N/4)*2; i++)
           v3[i] = v1[i] + v2[i]; 
       }
 
       #pragma omp section
       {
-        int n_max = N/4*3;
-        int n_min = N/4*2;
-        for (i = n_min; i < n_max; i++)
+        for (i = (N/4)*2; i < (N/4)*3; i++)
           v3[i] = v1[i] + v2[i]; 
       }
 
       #pragma omp section
       {
-        int n_max = N;
-        int n_min = N/4*3;
-        for (i = n_min; i < n_max; i++)
+        for (i = (N/4)*3; i < N; i++)
           v3[i] = v1[i] + v2[i]; 
       }
     }
