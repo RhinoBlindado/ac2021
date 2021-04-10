@@ -1,0 +1,35 @@
+Id. usuario del trabajo: c1estudiante16
+Id. del trabajo: 82633
+Nombre del trabajo especificado por usuario: bp1_10
+Directorio de trabajo (en el que se ejecuta el script): /home/c1estudiante16/bp1/ejer11
+Cola: ac
+Nodo que ejecuta este trabajo:atcgrid.ugr.es
+No de nodos asignados al trabajo: 1
+Nodos asignados al trabajo: atcgrid1
+CPUs por nodo: 12
+---SECUENCIAL---
+Tiempo:0.032230881	 / Tamaño Vectores:8388608	/ V1[0]+V2[0]=V3[0](2.143071+5.924948=8.068019) / / V1[8388607]+V2[8388607]=V3[8388607](1.214054+1.494359=2.708412) /
+0.46user 0.02system 0:00.49elapsed 99%CPU (0avgtext+0avgdata 197044maxresident)k
+0inputs+0outputs (0major+1816minor)pagefaults 0swaps
+Tiempo:0.064665929	 / Tamaño Vectores:16777216	/ V1[0]+V2[0]=V3[0](0.701080+0.695499=1.396579) / / V1[16777215]+V2[16777215]=V3[16777215](3.170514+7.066719=10.237233) /
+0.83user 0.10system 0:00.93elapsed 99%CPU (0avgtext+0avgdata 393528maxresident)k
+0inputs+0outputs (0major+1913minor)pagefaults 0swaps
+Tiempo:0.126480432	 / Tamaño Vectores:33554432	/ V1[0]+V2[0]=V3[0](2.534749+1.637842=4.172591) / / V1[33554431]+V2[33554431]=V3[33554431](3.986410+1.413083=5.399493) /
+1.72user 0.15system 0:01.87elapsed 99%CPU (0avgtext+0avgdata 786772maxresident)k
+0inputs+0outputs (0major+2103minor)pagefaults 0swaps
+Tiempo:0.240660370	 / Tamaño Vectores:67108864	/ V1[0]+V2[0]=V3[0](0.532218+0.626270=1.158488) / / V1[67108863]+V2[67108863]=V3[67108863](0.639129+0.964323=1.603453) /
+3.25user 0.27system 0:03.52elapsed 99%CPU (0avgtext+0avgdata 1573296maxresident)k
+0inputs+0outputs (0major+3148minor)pagefaults 0swaps
+---PARALLEL FOR---
+Tiempo:0.014600340	 / Tamaño Vectores:8388608	/ V1[0]+V2[0]=V3[0](0.000590+7.805853=7.806443) / / V1[8388607]+V2[8388607]=V3[8388607](1.157467+2.018662=3.176128) /
+0.52user 0.10system 0:00.06elapsed 1048%CPU (0avgtext+0avgdata 197380maxresident)k
+40inputs+0outputs (0major+1908minor)pagefaults 0swaps
+Tiempo:0.028988227	 / Tamaño Vectores:16777216	/ V1[0]+V2[0]=V3[0](0.000590+7.805853=7.806443) / / V1[16777215]+V2[16777215]=V3[16777215](1.819957+2.807892=4.627849) /
+1.01user 0.18system 0:00.10elapsed 1131%CPU (0avgtext+0avgdata 393940maxresident)k
+0inputs+0outputs (0major+2002minor)pagefaults 0swaps
+Tiempo:0.056912608	 / Tamaño Vectores:33554432	/ V1[0]+V2[0]=V3[0](0.000590+7.805853=7.806443) / / V1[33554431]+V2[33554431]=V3[33554431](0.698350+0.053108=0.751458) /
+1.66user 0.37system 0:00.18elapsed 1129%CPU (0avgtext+0avgdata 787048maxresident)k
+0inputs+0outputs (0major+2195minor)pagefaults 0swaps
+Tiempo:0.113013692	 / Tamaño Vectores:67108864	/ V1[0]+V2[0]=V3[0](0.000590+7.805853=7.806443) / / V1[67108863]+V2[67108863]=V3[67108863](0.415552+0.855111=1.270663) /
+3.17user 0.73system 0:00.33elapsed 1153%CPU (0avgtext+0avgdata 1573516maxresident)k
+0inputs+0outputs (0major+2579minor)pagefaults 0swaps

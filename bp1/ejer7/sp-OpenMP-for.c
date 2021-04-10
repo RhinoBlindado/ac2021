@@ -42,12 +42,16 @@ int main(int argc, char** argv){
     {
       srand(time(0));
 
-
-      #pragma omp parallel for
-      for (i = 0; i < N; i++)
+  
+      #pragma omp parallel
       {
-        v1[i] = rand()/ ((double) rand()); 
-        v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
+        unsigned int myseed = omp_get_thread_num();
+        #pragma omp for
+        for (i = 0; i < N; i++)
+        {
+          v1[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); 
+          v2[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); //printf("%d:%f,%f/",i,v1[i],v2[i]);
+        }
       }
     }
   

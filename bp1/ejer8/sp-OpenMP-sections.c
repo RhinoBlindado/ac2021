@@ -74,6 +74,7 @@ int main(int argc, char** argv){
     }
     else
     {
+      unsigned int myseed = omp_get_thread_num();
       #pragma omp single
       {
         srand(time(0));
@@ -85,8 +86,8 @@ int main(int argc, char** argv){
         {
           for (i = 0; i < N/4; i++)
           {
-            v1[i] = rand()/ ((double) rand()); 
-            v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
+            v1[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); 
+            v2[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); //printf("%d:%f,%f/",i,v1[i],v2[i]);
           }
         }
 
@@ -94,8 +95,8 @@ int main(int argc, char** argv){
         {
           for (i = N/4; i < (N/4)*2; i++)
           {
-            v1[i] = rand()/ ((double) rand()); 
-            v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
+            v1[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); 
+            v2[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); //printf("%d:%f,%f/",i,v1[i],v2[i]);
           }
         }
 
@@ -103,8 +104,8 @@ int main(int argc, char** argv){
         {
           for (i = (N/4)*2; i < (N/4)*3; i++)
           {
-            v1[i] = rand()/ ((double) rand()); 
-            v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
+            v1[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); 
+            v2[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); //printf("%d:%f,%f/",i,v1[i],v2[i]);
           }
         }
 
@@ -112,8 +113,8 @@ int main(int argc, char** argv){
         {
           for (i = (N/4)*3; i < N; i++)
           {
-            v1[i] = rand()/ ((double) rand()); 
-            v2[i] = rand()/ ((double) rand()); //printf("%d:%f,%f/",i,v1[i],v2[i]);
+            v1[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); 
+            v2[i] = rand_r(&myseed)/ ((double) rand_r(&myseed)); //printf("%d:%f,%f/",i,v1[i],v2[i]);
           }
         }
       }
