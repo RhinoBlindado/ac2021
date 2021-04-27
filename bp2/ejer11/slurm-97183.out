@@ -1,0 +1,92 @@
+### Cola: ac4
+---SECUENCIAL---
+Dimension: 7500 Tiempo: 0.526907123 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 2.723854821 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=1
+Dimension: 7500 Tiempo: 0.378975713 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 2.736341605 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=2
+Dimension: 7500 Tiempo: 0.257181603 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.174337127 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=3
+Dimension: 7500 Tiempo: 0.171756265 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.690301412 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=4
+Dimension: 7500 Tiempo: 0.119332477 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.547982163 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=5
+Dimension: 7500 Tiempo: 0.072358646 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.442320848 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=6
+Dimension: 7500 Tiempo: 0.051400075 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.372967217 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=7
+Dimension: 7500 Tiempo: 0.044483871 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.318367780 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=8
+Dimension: 7500 Tiempo: 0.044280606 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.262517904 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=9
+Dimension: 7500 Tiempo: 0.045385205 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.207850842 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=10
+Dimension: 7500 Tiempo: 0.046065043 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.169446851 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=11
+Dimension: 7500 Tiempo: 0.048253415 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.144229608 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=12
+Dimension: 7500 Tiempo: 0.049492759 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.133433852 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=13
+Dimension: 7500 Tiempo: 0.051204947 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.129627324 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=14
+Dimension: 7500 Tiempo: 0.053686819 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.131012473 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=15
+Dimension: 7500 Tiempo: 0.041925773 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.133453072 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=16
+Dimension: 7500 Tiempo: 0.056417322 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.136489690 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=32
+   REDUCTION
+Dimension: 7500 Tiempo: 0.064257265 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.139346365 
+Resultado: [0] = 15000; [14999] = 15000

@@ -1,0 +1,91 @@
+---SECUENCIAL---
+Dimension: 7500 Tiempo: 0.286145716 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.854110283 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=1
+Dimension: 7500 Tiempo: 0.264401110 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.829670434 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=2
+Dimension: 7500 Tiempo: 0.139668236 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.866614016 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=3
+Dimension: 7500 Tiempo: 0.086843793 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.523921649 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=4
+Dimension: 7500 Tiempo: 0.048343159 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.441195635 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=5
+Dimension: 7500 Tiempo: 0.128842600 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.624566751 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=6
+Dimension: 7500 Tiempo: 0.110204783 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.472807589 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=7
+Dimension: 7500 Tiempo: 0.068529050 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.426130507 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=8
+Dimension: 7500 Tiempo: 0.140048052 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 0.548065804 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=9
+Dimension: 7500 Tiempo: 0.484058729 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.722954681 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=10
+Dimension: 7500 Tiempo: 0.443805606 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.621527686 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=11
+Dimension: 7500 Tiempo: 0.451940744 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.764789568 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=12
+Dimension: 7500 Tiempo: 0.573684514 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.669865472 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=13
+Dimension: 7500 Tiempo: 0.537585749 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.923119258 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=14
+Dimension: 7500 Tiempo: 0.645081143 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.890270945 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=15
+Dimension: 7500 Tiempo: 0.623420207 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.958892761 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=16
+Dimension: 7500 Tiempo: 0.684893813 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 1.858305771 
+Resultado: [0] = 15000; [14999] = 15000
+---THREADS=32
+   REDUCTION
+Dimension: 7500 Tiempo: 1.012610368 
+Resultado: [0] = 7500; [7499] = 7500
+Dimension: 15000 Tiempo: 2.846580221 
+Resultado: [0] = 15000; [14999] = 15000
