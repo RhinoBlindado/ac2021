@@ -26,18 +26,6 @@ int main(int argc, char **argv)
     for (i=0; i<n; i++)
         a[i] = i; 
 
-    // Variables de estado
-    int modifier;
-    omp_sched_t kind;
-    omp_get_schedule(&kind, &modifier);
-
-    printf("\nVariables fuera de región paralela:\n");
-    printf("(Ajuste dinámico de hilos) dyn-var = %d\n", omp_get_dynamic());
-    printf("(Hilos en ejecución paralela) nthreads-var = %d\n", omp_get_max_threads());
-    printf("(Máximo de hilos) thread-limit-var = %d\n", omp_get_thread_limit());
-    printf("(Planificación) run-sched-var = %X %d\n\n", kind, modifier);
-
-
     #pragma omp parallel 
     {
         #pragma omp for firstprivate(suma) lastprivate(suma) schedule(dynamic,chunk)
@@ -51,13 +39,18 @@ int main(int argc, char **argv)
         #pragma omp single
         {
             printf("\nVariables dentro de región paralela (ejecutado por hilo %d):\n", omp_get_thread_num());
-            printf("(Ajuste dinámico de hilos) dyn-var = %d\n", omp_get_dynamic());
-            printf("(Hilos en ejecución paralela) nthreads-var = %d\n", omp_get_max_threads());
-            printf("(Máximo de hilos) thread-limit-var = %d\n", omp_get_thread_limit());
-            printf("(Planificación) run-sched-var = %X %d\n\n", kind, modifier);
+            printf("omp_get_num_threads = %d\n", omp_get_num_threads());
+            printf("omp_get_num_procs = %d\n", omp_get_num_procs());
+            printf("omp_in_parallel = %d\n", omp_in_parallel());
         }
     }
 
     printf("Fuera de 'parallel for' suma=%d\n",suma); 
-}
 
+    printf("\nVariables fuera de región paralela:\n");
+    printf("omp_get_num_threads = %d\n", omp_get_num_threads());
+    printf("omp_get_num_procs = %d\n", omp_get_num_procs());
+    printf("omp_in_parallel = %d\n", omp_in_parallel());
+
+}
+ 
