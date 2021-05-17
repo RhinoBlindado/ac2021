@@ -10,9 +10,9 @@
 
 int main(int argc, char **argv)
 {
-    if(argc < 4) 
+    if(argc < 2) 
     {
-        printf("Uso: ./pmtv-sencuencial_EXE n\nn    Dimensión del vector y de la matriz.\nkind      Tipo de planificación\nchunk    Tamaño del chunk");
+        printf("Uso: ./pmtv-OpenMP_EXE n\nn    Dimensión del vector y de la matriz.\n");
         exit(-1);
     }
 
@@ -46,32 +46,53 @@ int main(int argc, char **argv)
     }
 
     // Inicialización de datos.
-    omp_set_schedule((omp_sched_t)atoi(argv[2]), atoi(argv[3]));
+    int j;
+    double aux;
 
-    int aux, j;
     #pragma omp parallel private(aux, j) shared(v3)
     {
         #pragma omp master
         {
+            struct drand48_data randBuffer;
+            double randomNumber;
+            srand48_r(time(NULL), &randBuffer);
+
             for (int i = 0; i < N; i++)
             {
-                v1[i] = 1;
+                drand48_r(&randBuffer, &randomNumber);
+                v1[i] = randomNumber * 10;
                 for (int j = 0; j < N; j++)
                 {
                     if (j <= i)
                     {
-                        matrix[i][j] = 1;
+                        drand48_r(&randBuffer, &randomNumber);
+                        matrix[i][j] = randomNumber * 10;
                     }
                     else
                     {
                         matrix[i][j] = 0;
                     }
                     
-                }
-                
+                }  
             }
-        }
 
+        /*    printf("v1 = [");
+            for (int i = 0; i < N; i++)
+            {
+                printf("%2.4f\t", v1[i]);
+            }
+            printf("]\n");
+            printf("M = \n");
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    printf("%2.4f\t",matrix[i][j]);
+                }
+                printf("\n");
+            }
+        */       
+        }
         #pragma omp barrier
 
         // Cálculo de la multiplicación de v1 * matrix = v3
@@ -79,7 +100,7 @@ int main(int argc, char **argv)
         cgt1 = omp_get_wtime();
 
         // Filas
-        #pragma omp for
+        #pragma omp for schedule(runtime)
         for (int i = 0; i < N; i++)
         {
             aux = 0;
@@ -103,13 +124,13 @@ int main(int argc, char **argv)
         {
             for (int i = 0; i < N; i++)
             {
-                printf("[%d] = %0.2f ", i, v3[i]);
+                printf("[%d] = %2.4f ", i, v3[i]);
             }
             
         }
         else
         {
-            printf("[0] = %2.2f, ..., [%d] = %2.2f", v3[0], N-1, v3[N-1]);
+            printf("[0] = %2.4f, ..., [%d] = %2.4f", v3[0], N-1, v3[N-1]);
         }
         printf("\n");
 

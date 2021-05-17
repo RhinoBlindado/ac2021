@@ -1,0 +1,39 @@
+>INICIO SCRIPT
+>>COLA: ac
+>>>EJECUTANDO static...
+Dimension: 15360 Tiempo: 0.610928610 
+Resultado: [0] = 386507.6476, ..., [15359] = 6.2937
+Finalizado
+>>>EJECUTANDO dynamic...
+Dimension: 15360 Tiempo: 0.454954367 
+Resultado: [0] = 383424.8103, ..., [15359] = 20.3938
+Finalizado
+>>>EJECUTANDO guided...
+Dimension: 15360 Tiempo: 0.728995036 
+Resultado: [0] = 384563.6088, ..., [15359] = 38.2749
+Finalizado
+>>>EJECUTANDO static,1...
+Dimension: 15360 Tiempo: 0.527765665 
+Resultado: [0] = 385349.8620, ..., [15359] = 47.1074
+Finalizado
+>>>EJECUTANDO dynamic,1...
+Dimension: 15360 Tiempo: 0.492020015 
+Resultado: [0] = 384345.2787, ..., [15359] = 8.5949
+Finalizado
+>>>EJECUTANDO guided,1...
+Dimension: 15360 Tiempo: 0.842538986 
+Resultado: [0] = 382537.6154, ..., [15359] = 10.1104
+Finalizado
+>>>EJECUTANDO static,64...
+Dimension: 15360 Tiempo: 0.427413050 
+Resultado: [0] = 385637.6985, ..., [15359] = 93.7518
+Finalizado
+>>>EJECUTANDO dynamic,64...
+Dimension: 15360 Tiempo: 0.418437518 
+Resultado: [0] = 385750.3127, ..., [15359] = 22.0689
+Finalizado
+>>>EJECUTANDO guided,64...
+Dimension: 15360 Tiempo: 0.824048381 
+Resultado: [0] = 384028.2101, ..., [15359] = 40.8453
+Finalizado
+>FIN
