@@ -4,7 +4,7 @@
 # Arquitectura de Computadores #
 ## :books: Curso 2020-2021, Grado en Ingeniería Informática, ETSIIT UGR.
 ### :pushpin: Introducción
-Las prácticas se dividieron en 5 bloques en los que había que realizar distintas tareas referentes a elementos de la arquitectura de un ordenador con un enfoque en paralelizar código por medio de la API [OpenMP 5.1](https://www.openmp.org/) y técnicas para la optimización del código aprovechando la arquitectura de la máquina en la que se trabaja.
+Las prácticas se dividieron en 5 bloques en los que había que realizar distintas tareas sobre los elementos de la arquitectura de un ordenador con un enfoque en paralelizar código por medio de la API [OpenMP 5.1](https://www.openmp.org/) y técnicas para la optimización del código aprovechando la arquitectura de la máquina en la que se trabaja.
 ### :gear: Compilación
 Los ejercicios se encuentran en diferentes carpetas, cada una posee un Makefile sencillo, por lo tanto, para compilar cierto ejercicio no hace falta más que irse a la ubicación y en la terminal escribir `make`. 
  
